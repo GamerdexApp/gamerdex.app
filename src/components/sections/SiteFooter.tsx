@@ -35,7 +35,8 @@ export default function SiteFooter() {
         </div>
         <div className="dark:bg-border-dark h-px w-full bg-gray-200" />
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          <FaRegCopyright className="inline" /> {new Date().getFullYear()} GamerDex. All rights reserved.
+          <FaRegCopyright className="inline" /> {new Date().getFullYear()}{" "}
+          GamerDex. All rights reserved.
         </p>
       </div>
     </footer>
