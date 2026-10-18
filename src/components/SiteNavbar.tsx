@@ -10,9 +10,9 @@ import {
 } from "flowbite-react";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#hero" },
-  { label: "Features", href: "#features" },
-  { label: "About", href: "#about" },
+  { label: "Home", href: "/#hero" },
+  { label: "Features", href: "/#features" },
+  { label: "About", href: "/#about" },
 ];
 
 export default function SiteNavbar() {
@@ -21,7 +21,7 @@ export default function SiteNavbar() {
       fluid
       className="dark:border-border-dark dark:bg-surface-dark/90 fixed top-0 right-0 left-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur-md"
     >
-      <NavbarBrand href="#hero">
+      <NavbarBrand href="/#hero">
         <svg
           viewBox="0 0 255 100"
           xmlns="http://www.w3.org/2000/svg"

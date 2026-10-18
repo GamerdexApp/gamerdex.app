@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaDiscord, FaRegCopyright } from "react-icons/fa6";
 
 export default function SiteFooter() {
@@ -6,7 +7,7 @@ export default function SiteFooter() {
     <footer className="dark:border-border-dark dark:bg-surface-dark border-t border-gray-200 bg-white px-4 py-8">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6">
         <div className="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
-          <a href="#hero" className="flex items-center gap-2">
+          <Link href="/#hero" className="flex items-center gap-2">
             <Image
               src="/gamerdex-logo.png"
               alt="GamerDex"
@@ -14,14 +15,17 @@ export default function SiteFooter() {
               height={32}
               className="h-11 w-auto"
             />
-          </a>
+          </Link>
           <div className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400">
-            <a href="#features" className="hover:text-brand">
+            <Link href="/#features" className="hover:text-brand">
               Features
-            </a>
-            <a href="#about" className="hover:text-brand">
+            </Link>
+            <Link href="/#about" className="hover:text-brand">
               About
-            </a>
+            </Link>
+            <Link href="/privacy" className="hover:text-brand">
+              Privacy
+            </Link>
             <a
               href="https://discord.gg/NBTjUCvqev"
               target="_blank"
