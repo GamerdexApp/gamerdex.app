@@ -26,6 +26,9 @@ export default function SiteFooter() {
             <Link href="/privacy" className="hover:text-brand">
               Privacy
             </Link>
+            <Link href="/terms" className="hover:text-brand">
+              Terms
+            </Link>
             <a
               href="https://discord.gg/NBTjUCvqev"
               target="_blank"
