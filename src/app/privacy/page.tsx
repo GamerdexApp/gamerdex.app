@@ -10,7 +10,7 @@ import LegalPage, {
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How the GamerDex trackers handle your data, including the optional cloud sync with GitHub and Google Drive.",
+    "How the GamerDex trackers handle your data, including the optional cloud sync with GitHub, Google Drive, Dropbox and OneDrive.",
   alternates: {
     canonical: "/privacy",
   },
@@ -36,8 +36,8 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             Cloud sync is optional and off until you turn it on. When it is on,
-            your data goes to your own GitHub or Google Drive account and
-            nowhere else.
+            your data goes to your own GitHub, Google Drive, Dropbox or OneDrive
+            account and nowhere else.
           </li>
           <li>
             We cannot read your data, because it is not on any server that we
@@ -79,8 +79,8 @@ export default function PrivacyPolicy() {
         <p className={textClass}>
           Some trackers can keep your progress in your own cloud account so that
           your devices stay in step. Today this is available in the Whiteout
-          Survival Tracker with GitHub or Google Drive. You choose the provider,
-          and you can disconnect at any time.
+          Survival Tracker with GitHub, Google Drive, Dropbox or OneDrive. You
+          choose the provider, and you can disconnect at any time.
         </p>
 
         <SubHeading>What is stored and where</SubHeading>
@@ -91,8 +91,9 @@ export default function PrivacyPolicy() {
           sync. They are saved in a folder named Gamerdex, inside a subfolder
           for the tracker. With GitHub this is a private repository named
           gamerdex-data that you create. With Google Drive it is a visible
-          folder named Gamerdex in your Drive. The files do not contain your
-          sign in details.
+          folder named Gamerdex in your Drive. With Dropbox and OneDrive it is a
+          folder inside the Apps folder that the service creates for the app.
+          The files do not contain your sign in details.
         </p>
 
         <SubHeading>How the sync works</SubHeading>
@@ -153,10 +154,44 @@ export default function PrivacyPolicy() {
           and does not use a public one.
         </p>
 
+        <SubHeading>Dropbox</SubHeading>
+        <List>
+          <li>
+            We ask for the files.content.read and files.content.write scopes,
+            with the App folder access type. Dropbox gives the app one folder
+            inside Apps. It cannot see, list or change any other file in your
+            Dropbox.
+          </li>
+          <li>
+            We do not ask for your name, your email address or your profile.
+          </li>
+          <li>
+            We use the access only to save and load your tracker data for you,
+            and we do not transfer it to anyone.
+          </li>
+        </List>
+
+        <SubHeading>OneDrive</SubHeading>
+        <List>
+          <li>
+            We ask for the Files.ReadWrite.AppFolder permission and for
+            offline_access, which keeps you signed in so that you do not sign in
+            again each time. Microsoft gives the app one folder inside Apps. It
+            cannot see, list or change any other file in your OneDrive.
+          </li>
+          <li>
+            OneDrive sync works with personal Microsoft accounts. We do not ask
+            for your name, your email address, your mail or your profile.
+          </li>
+          <li>
+            We use the access only to save and load your tracker data for you,
+            and we do not transfer it to anyone.
+          </li>
+        </List>
+
         <SubHeading>Other providers</SubHeading>
         <p className={textClass}>
-          We may add other providers later, such as Microsoft OneDrive or
-          Dropbox. They are not available today. If we add one, it will use the
+          We may add other providers later. If we add one, it will use the
           narrowest access that the provider offers, the rules in this policy
           will apply to it, and we will update this page before it is released.
         </p>
@@ -205,6 +240,14 @@ export default function PrivacyPolicy() {
             GitHub
           </ExternalLink>
           ,{" "}
+          <ExternalLink href="https://www.dropbox.com/privacy">
+            Dropbox
+          </ExternalLink>
+          ,{" "}
+          <ExternalLink href="https://privacy.microsoft.com/privacystatement">
+            Microsoft
+          </ExternalLink>
+          ,{" "}
           <ExternalLink href="https://vercel.com/legal/privacy-policy">
             Vercel
           </ExternalLink>{" "}
@@ -225,13 +268,18 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             <strong>Delete the cloud copy.</strong> Delete the Gamerdex folder
-            in your Google Drive, or the Gamerdex folder in your gamerdex-data
-            repository on GitHub.
+            in your Google Drive, the app folder under Apps in your Dropbox or
+            OneDrive, or the Gamerdex folder in your gamerdex-data repository on
+            GitHub.
           </li>
           <li>
             <strong>Remove our access.</strong> For Google, open your Google
             Account permissions page and remove Gamerdex. For GitHub, open
             Settings, then Applications, and uninstall or revoke Gamerdex Sync.
+            For Dropbox, open your account settings, then Connected apps, and
+            remove the app. For Microsoft, open the privacy settings of your
+            Microsoft account, find the apps and services that have access, and
+            remove the app.
           </li>
           <li>
             <strong>Delete the local copy.</strong> Clear the site data in your

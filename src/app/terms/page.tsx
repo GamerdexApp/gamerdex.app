@@ -10,7 +10,7 @@ import LegalPage, {
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms for using the GamerDex trackers, including the optional cloud sync with GitHub and Google Drive.",
+    "The terms for using the GamerDex trackers, including the optional cloud sync with GitHub, Google Drive, Dropbox and OneDrive.",
   alternates: {
     canonical: "/terms",
   },
@@ -31,7 +31,7 @@ export default function TermsOfService() {
           GamerDex is a set of free game tracker websites made by an independent
           developer. You use the trackers to follow your own progress in a game.
           Some trackers offer optional cloud sync, which keeps your progress in
-          your own GitHub or Google Drive account.
+          your own GitHub, Google Drive, Dropbox or OneDrive account.
         </p>
       </Section>
 
@@ -69,19 +69,27 @@ export default function TermsOfService() {
       <Section id="cloud-sync" title="Cloud sync and your accounts">
         <List>
           <li>
-            To use cloud sync you sign in to your own account with GitHub or
-            Google. You are responsible for that account and for what is stored
-            in it.
+            To use cloud sync you sign in to your own account with GitHub,
+            Google, Dropbox or Microsoft. You are responsible for that account
+            and for what is stored in it.
           </li>
           <li>
             The terms and privacy policy of your provider apply to your use of
             that account. See the{" "}
             <ExternalLink href="https://policies.google.com/terms">
               Google Terms of Service
-            </ExternalLink>{" "}
-            and the{" "}
+            </ExternalLink>
+            , the{" "}
             <ExternalLink href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">
               GitHub Terms of Service
+            </ExternalLink>
+            , the{" "}
+            <ExternalLink href="https://www.dropbox.com/terms">
+              Dropbox Terms of Service
+            </ExternalLink>{" "}
+            and the{" "}
+            <ExternalLink href="https://www.microsoft.com/servicesagreement">
+              Microsoft Services Agreement
             </ExternalLink>
             .
           </li>
