@@ -1,3 +1,5 @@
+import { GAME_CARDS } from "../GameCard";
+
 export default function AboutSection() {
   return (
     <section
@@ -59,8 +61,9 @@ export default function AboutSection() {
           GamerDex is a collection of game-specific tracker companions designed
           for players who want to see and do everything. Whether you&apos;re
           cataloging every fish in Dinkum, completing the community center in
-          Stardew Valley, or stocking every shelf in Supermarket Simulator,
-          we&apos;ve got a tracker built just for that.
+          Stardew Valley, stocking every shelf in Supermarket Simulator, or
+          planning your next upgrade in Whiteout Survival, we&apos;ve got a
+          tracker built just for that.
         </p>
         <p className="mb-10 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
           Each tracker is hand-crafted with accurate, up-to-date game data and
@@ -70,7 +73,9 @@ export default function AboutSection() {
 
         <div className="flex flex-wrap justify-center gap-8 text-center">
           <div>
-            <div className="text-brand text-3xl font-bold">3</div>
+            <div className="text-brand text-3xl font-bold">
+              {GAME_CARDS.length}
+            </div>
             <div className="text-sm text-gray-500 dark:text-gray-400">
               Game Trackers
             </div>

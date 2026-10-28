@@ -1,6 +1,6 @@
 interface GameCardProps {
   id: string;
-  title: string[];
+  title: string;
   subtitle: string;
   indexTop: string;
   indexBottom: string;
@@ -54,8 +54,7 @@ export default function GameCard({
   href,
   comingSoon = false,
 }: GameCardProps) {
-  const subtitleY =
-    title.length > 1 ? titleY + 20 * (title.length - 1) + 23 : titleY + 23;
+  const subtitleY = titleY + 23;
   const dividerY = subtitleY + 22;
   const watermarkY = dividerY + 10;
 
@@ -199,21 +198,18 @@ export default function GameCard({
             opacity="0.15"
           />
 
-          {title.map((line, i) => (
-            <text
-              key={i}
-              x="150"
-              y={titleY + i * 20}
-              fontFamily="'Chakra Petch', sans-serif"
-              fontWeight="700"
-              fontSize={titleSize}
-              fill="#FFFFFF"
-              textAnchor="middle"
-              letterSpacing="0.02em"
-            >
-              {line}
-            </text>
-          ))}
+          <text
+            x="150"
+            y={titleY}
+            fontFamily="'Chakra Petch', sans-serif"
+            fontWeight="700"
+            fontSize={titleSize}
+            fill="#FFFFFF"
+            textAnchor="middle"
+            letterSpacing="0.02em"
+          >
+            {title}
+          </text>
 
           <text
             x="150"
@@ -327,7 +323,7 @@ export default function GameCard({
 export const GAME_CARDS: GameCardProps[] = [
   {
     id: "d",
-    title: ["DINKUM"],
+    title: "DINKUM",
     subtitle: "TRACKER",
     indexTop: "D",
     indexBottom: "TRK",
@@ -339,7 +335,7 @@ export const GAME_CARDS: GameCardProps[] = [
   },
   {
     id: "s",
-    title: ["STARDEW VALLEY"],
+    title: "STARDEW VALLEY",
     subtitle: "COMPANION",
     indexTop: "SV",
     indexBottom: "CMP",
@@ -351,14 +347,26 @@ export const GAME_CARDS: GameCardProps[] = [
   },
   {
     id: "m",
-    title: ["SUPERMARKET", "SIMULATOR"],
+    title: "SUPERMARKET SIMULATOR",
     subtitle: "BUDDY",
     indexTop: "SS",
     indexBottom: "BDY",
     headerImage: "/games/supermarket-simulator.jpg",
     iconImage: "/games/supermarket-simulator-icon.jpg",
-    titleSize: 15,
-    titleY: 232,
+    titleSize: 17,
+    titleY: 235,
     href: "https://supermarket-simulator.gamerdex.app",
+  },
+  {
+    id: "w",
+    title: "WHITEOUT SURVIVAL",
+    subtitle: "TRACKER",
+    indexTop: "WS",
+    indexBottom: "TRK",
+    headerImage: "/games/whiteout-survival.jpg",
+    iconImage: "/games/whiteout-survival-icon.jpg",
+    titleSize: 18,
+    titleY: 235,
+    href: "https://whiteout-survival.gamerdex.app",
   },
 ];

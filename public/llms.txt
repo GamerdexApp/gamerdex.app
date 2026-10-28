@@ -9,6 +9,7 @@ GamerDex provides dedicated tracking tools for individual games. Each tracker is
 - Dinkum — track your progress in the Australian-themed life sim
 - Stardew Valley — catalog your farm, bundles, and collectibles
 - Supermarket Simulator — track your store management progress
+- Whiteout Survival — track your chiefs, upgrades, research and events
 
 ## Site
 
