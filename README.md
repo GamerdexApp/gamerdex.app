@@ -39,7 +39,7 @@ pnpm format
 pnpm format:check
 ```
 
-Built with Next.js 16 (App Router), React 19, Tailwind CSS 4, Flowbite React and TypeScript, and deployed on Vercel.
+Built with Next.js 16 (App Router), React 19, Tailwind CSS 4 and TypeScript, and deployed on Vercel.
 
 ## Legal pages
 

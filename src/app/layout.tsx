@@ -1,7 +1,6 @@
-import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
 import { Chakra_Petch, Geist_Mono } from "next/font/google";
-import { ThemeInit } from "@/.flowbite-react/init";
+import { applyThemeBeforePaint } from "../components/theme";
 import "./globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -77,12 +76,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <ThemeModeScript />
+        <script dangerouslySetInnerHTML={{ __html: applyThemeBeforePaint }} />
       </head>
       <body
         className={`${chakraPetch.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <ThemeInit />
         {children}
       </body>
     </html>
