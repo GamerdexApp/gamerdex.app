@@ -1,4 +1,8 @@
-import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import {
+  HiOutlineCalculator,
+  HiOutlineClipboardDocumentList,
+  HiOutlineCloudArrowUp,
+} from "react-icons/hi2";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { MdOutlineDevices } from "react-icons/md";
 import { TbTargetArrow } from "react-icons/tb";
@@ -8,7 +12,7 @@ const FEATURES = [
     icon: <HiOutlineClipboardDocumentList className="h-8 w-8" />,
     title: "Track Everything",
     description:
-      "Catalog items, quests, fish, bugs, recipes, and more. Every collectible in one place with real-time progress tracking.",
+      "Catalog items, fish, bugs, recipes, buildings, heroes and more. Every change saves at once, and you can undo a mistake.",
   },
   {
     icon: <IoStatsChartOutline className="h-8 w-8" />,
@@ -20,13 +24,25 @@ const FEATURES = [
     icon: <MdOutlineDevices className="h-8 w-8" />,
     title: "Works Everywhere",
     description:
-      "Responsive web apps that work on your phone, tablet, or desktop. Pull up your tracker right next to your game.",
+      "Responsive web apps that work on your phone, tablet or desktop, in light or dark mode. Pull up your tracker right next to your game.",
   },
   {
     icon: <TbTargetArrow className="h-8 w-8" />,
     title: "Game-Specific",
     description:
-      "Each tracker is custom-built for its game — not a generic checklist. We know the data because we play the games.",
+      "Each tracker is custom-built for its game, not a generic checklist. We know the data because we play the games.",
+  },
+  {
+    icon: <HiOutlineCalculator className="h-8 w-8" />,
+    title: "Plan Ahead",
+    description:
+      "Work out upgrade costs and times, sell prices and what is left to finish, all from the game data.",
+  },
+  {
+    icon: <HiOutlineCloudArrowUp className="h-8 w-8" />,
+    title: "Your Data Stays Yours",
+    description:
+      "No account needed. Progress saves in your browser, and optional cloud sync keeps it in your own Google Drive, Dropbox, OneDrive or GitHub.",
   },
 ];
 

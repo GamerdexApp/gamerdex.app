@@ -24,7 +24,7 @@ const jsonLd = {
     },
     ...GAME_CARDS.map((card) => ({
       "@type": "SoftwareApplication",
-      name: card.title.join(" "),
+      name: card.title,
       applicationCategory: "GameApplication",
       operatingSystem: "Web",
       url: card.href,

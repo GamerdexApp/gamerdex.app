@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "October 18, 2026";
-const ISSUES_URL = "https://github.com/chiefpansancolt/gamerdex.app/issues";
+const LAST_UPDATED = "October 28, 2026";
+const ISSUES_URL = "https://github.com/GamerdexApp/gamerdex.app/issues";
 const DISCORD_URL = "https://discord.gg/NBTjUCvqev";
 const GOOGLE_POLICY_URL =
   "https://developers.google.com/terms/api-services-user-data-policy";
@@ -78,9 +78,10 @@ export default function PrivacyPolicy() {
       <Section id="cloud-sync" title="Optional cloud sync">
         <p className={textClass}>
           Some trackers can keep your progress in your own cloud account so that
-          your devices stay in step. Today this is available in the Whiteout
-          Survival Tracker with GitHub, Google Drive, Dropbox or OneDrive. You
-          choose the provider, and you can disconnect at any time.
+          your devices stay in step. Today this is available in the Dinkum
+          Tracker, the Stardew Valley Companion and the Whiteout Survival
+          Tracker with GitHub, Google Drive, Dropbox or OneDrive. You choose the
+          provider, and you can disconnect at any time.
         </p>
 
         <SubHeading>What is stored and where</SubHeading>

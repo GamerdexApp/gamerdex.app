@@ -1,16 +1,20 @@
 # GamerDex
 
-> GamerDex is a collection of game tracker companions that help you catalog, track, and complete your favorite games.
+> GamerDex is a set of free game progress trackers. Each tracker is a standalone web app built for one game. There is no account, progress is saved in the browser, and cloud sync is optional.
 
-GamerDex provides dedicated tracking tools for individual games. Each tracker is a standalone companion app tailored to a specific game's content — collectibles, progress milestones, and completion checklists.
+Each tracker covers its game's content: collectibles, buildings, upgrades, milestones and completion checklists. Some trackers can sync progress to the player's own Google Drive, Dropbox, OneDrive or GitHub account. GamerDex runs no database of player data.
 
-## Supported Games
+## Trackers
 
-- Dinkum — track your progress in the Australian-themed life sim
-- Stardew Valley — catalog your farm, bundles, and collectibles
-- Supermarket Simulator — track your store management progress
+- [Dinkum Tracker](https://dinkum.gamerdex.app): track fish, bugs, NPCs, recipes, gear and collections in the Australian life sim
+- [Stardew Valley Companion](https://stardew-valley.gamerdex.app): track bundles, collections, villagers and perfection, and import a save file
+- [Supermarket Simulator Buddy](https://supermarket-simulator.gamerdex.app): track store licenses, products and management progress
+- [Whiteout Survival Tracker](https://whiteout-survival.gamerdex.app): track chiefs, buildings, heroes, research and events, and plan upgrade costs and times
 
 ## Site
 
 - Homepage: https://gamerdex.app
+- Privacy policy: https://gamerdex.app/privacy
+- Terms of service: https://gamerdex.app/terms
 - Sitemap: https://gamerdex.app/sitemap.xml
+- Source: https://github.com/GamerdexApp

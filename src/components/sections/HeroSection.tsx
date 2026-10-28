@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center overflow-hidden px-4 pt-24"
+      className="relative flex min-h-screen flex-col items-center overflow-hidden px-4 pt-24 pb-28"
     >
       <div className="pointer-events-none absolute inset-0 opacity-[0.03] dark:opacity-[0.04]">
         <svg width="100%" height="100%">
@@ -91,15 +91,18 @@ export default function HeroSection() {
           Your Ultimate <span className="text-brand">Game Companion</span>
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-base text-gray-600 dark:text-gray-400">
-          Track items, complete collections, and conquer every game with
-          purpose-built tracker companions. Never miss a collectible again.
+          Track collections, plan upgrades and see what is left in every game
+          with purpose-built tracker companions. Free, with no account needed.
         </p>
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl">
-        <div className="flex items-center justify-center gap-6 lg:gap-10">
+      <div className="relative z-10 mx-auto w-full max-w-330">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {GAME_CARDS.map((card) => (
-            <div key={card.id} className="w-80 sm:w-96 lg:w-md">
+            <div
+              key={card.id}
+              className="w-full max-w-md sm:w-[calc(50%-0.75rem)] sm:max-w-none lg:w-[calc((100%-3rem)/3)]"
+            >
               <GameCard {...card} />
             </div>
           ))}

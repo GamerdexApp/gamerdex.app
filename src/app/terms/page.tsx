@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const LAST_UPDATED = "October 18, 2026";
-const ISSUES_URL = "https://github.com/chiefpansancolt/gamerdex.app/issues";
+const ISSUES_URL = "https://github.com/GamerdexApp/gamerdex.app/issues";
 const DISCORD_URL = "https://discord.gg/NBTjUCvqev";
 
 const INTRO =

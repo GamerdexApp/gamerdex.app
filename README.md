@@ -6,65 +6,50 @@
   <strong>Your Ultimate Game Companion</strong>
 </p>
 
-<p align="center">
-  Track items, complete collections, and conquer every game with purpose-built tracker companions.
-</p>
+The home site for GamerDex, live at [gamerdex.app](https://gamerdex.app). It introduces the project, links to each tracker, and hosts the privacy policy and terms of service that every tracker shares.
 
----
+GamerDex trackers are free and need no account. Each one keeps your progress in your browser, and cloud sync is optional and saves your data to storage you own.
 
-## About
+## Trackers
 
-GamerDex is a collection of game-specific tracker companions designed for players who want to see and do everything. Each tracker is hand-crafted with accurate, up-to-date game data and designed to be used alongside your gameplay.
+| Game                  | Site                                                                             | Source                                                                                |
+| --------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Dinkum                | [dinkum.gamerdex.app](https://dinkum.gamerdex.app)                               | [dinkum-tracker](https://github.com/GamerdexApp/dinkum-tracker)                       |
+| Stardew Valley        | [stardew-valley.gamerdex.app](https://stardew-valley.gamerdex.app)               | [stardew-valley-companion](https://github.com/GamerdexApp/stardew-valley-companion)   |
+| Supermarket Simulator | [supermarket-simulator.gamerdex.app](https://supermarket-simulator.gamerdex.app) |                                                                                       |
+| Whiteout Survival     | [whiteout-survival.gamerdex.app](https://whiteout-survival.gamerdex.app)         | [whiteout-survival-tracker](https://github.com/GamerdexApp/whiteout-survival-tracker) |
 
-### Current Trackers
+The homepage cards come from `GAME_CARDS` in `src/components/GameCard.tsx`. Card art lives in `public/games`. When you add a tracker, also add it to `public/llms.txt` and the About section copy.
 
-- **Dinkum Tracker** — Catalog every fish, bug, item, and more
-- **Stardew Valley Companion** — Track bundles, collections, and community center progress
-- **Supermarket Simulator Buddy** — Stock every shelf and manage your inventory
+## Run it
 
-## Tech Stack
+Node 24 and pnpm 10 are required.
 
-- [Next.js](https://nextjs.org/) 16 (App Router)
-- [React](https://react.dev/) 19
-- [Tailwind CSS](https://tailwindcss.com/) 4
-- [Flowbite React](https://flowbite-react.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- Deployed on [Vercel](https://vercel.com/)
-
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) 24+
-- [pnpm](https://pnpm.io/) 10+
-
-### Installation
-
-```bash
-pnpm install
 ```
-
-### Development
-
-```bash
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000). Other commands:
 
-### Build
-
-```bash
-pnpm build
 ```
-
-### Lint & Format
-
-```bash
+pnpm build
 pnpm lint
 pnpm format
 pnpm format:check
 ```
+
+Built with Next.js 16 (App Router), React 19, Tailwind CSS 4 and TypeScript, and deployed on Vercel.
+
+## Legal pages
+
+The privacy policy (`/privacy`) and terms of service (`/terms`) cover every tracker and the cloud sync providers. Update them and their dates before a tracker collects something new or adds a sync provider.
+
+## Contact
+
+Open an issue here or on the tracker's repository, or join the [Discord](https://discord.gg/NBTjUCvqev).
+
+GamerDex is an unofficial fan project. It is not affiliated with or endorsed by the developers or publishers of any game it covers.
 
 ## License
 

@@ -1,7 +1,6 @@
-import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
 import { Chakra_Petch, Geist_Mono } from "next/font/google";
-import { ThemeInit } from "@/.flowbite-react/init";
+import { applyThemeBeforePaint } from "../components/theme";
 import "./globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -20,17 +19,21 @@ const siteUrl = "https://gamerdex.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "GamerDex — Track Your Game Progress",
+    default: "GamerDex: Free Game Progress Trackers",
     template: "%s | GamerDex",
   },
   description:
-    "GamerDex is a collection of game tracker companions that help you catalog, track, and complete your favorite games.",
+    "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator and Whiteout Survival. No account, your data stays in your browser, and cloud sync is optional.",
   keywords: [
     "game tracker",
     "game progress",
     "gaming companion",
     "game catalog",
     "GamerDex",
+    "Dinkum tracker",
+    "Stardew Valley tracker",
+    "Supermarket Simulator tracker",
+    "Whiteout Survival tracker",
   ],
   alternates: {
     canonical: "/",
@@ -40,9 +43,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "GamerDex — Track Your Game Progress",
+    title: "GamerDex: Free Game Progress Trackers",
     description:
-      "GamerDex is a collection of game tracker companions that help you catalog, track, and complete your favorite games.",
+      "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator and Whiteout Survival. No account, your data stays in your browser, and cloud sync is optional.",
     url: siteUrl,
     siteName: "GamerDex",
     locale: "en_US",
@@ -50,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GamerDex — Track Your Game Progress",
+    title: "GamerDex: Free Game Progress Trackers",
     description:
-      "GamerDex is a collection of game tracker companions that help you catalog, track, and complete your favorite games.",
+      "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator and Whiteout Survival. No account, your data stays in your browser, and cloud sync is optional.",
   },
   icons: {
     icon: [
@@ -73,12 +76,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <ThemeModeScript />
+        <script dangerouslySetInnerHTML={{ __html: applyThemeBeforePaint }} />
       </head>
       <body
         className={`${chakraPetch.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <ThemeInit />
         {children}
       </body>
     </html>
