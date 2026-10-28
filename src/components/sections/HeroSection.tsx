@@ -91,8 +91,8 @@ export default function HeroSection() {
           Your Ultimate <span className="text-brand">Game Companion</span>
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-base text-gray-600 dark:text-gray-400">
-          Track items, complete collections, and conquer every game with
-          purpose-built tracker companions. Never miss a collectible again.
+          Track collections, plan upgrades and see what is left in every game
+          with purpose-built tracker companions. Free, with no account needed.
         </p>
       </div>
 

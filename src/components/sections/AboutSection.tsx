@@ -67,8 +67,9 @@ export default function AboutSection() {
         </p>
         <p className="mb-10 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
           Each tracker is hand-crafted with accurate, up-to-date game data and
-          designed to be used alongside your gameplay. No ads, no accounts
-          required, just open and start tracking.
+          designed to be used alongside your gameplay. No ads and no accounts:
+          open a tracker and start. Your progress stays in your browser, and
+          cloud sync to your own storage is there when you want it.
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 text-center">
