@@ -79,9 +79,9 @@ export default function PrivacyPolicy() {
         <p className={textClass}>
           Some trackers can keep your progress in your own cloud account so that
           your devices stay in step. Today this is available in the Dinkum
-          Tracker, the Stardew Valley Companion and the Whiteout Survival
-          Tracker with GitHub, Google Drive, Dropbox or OneDrive. You choose the
-          provider, and you can disconnect at any time.
+          Tracker, the Stardew Valley Companion, Supermarket Simulator Buddy and
+          the Whiteout Survival Tracker with GitHub, Google Drive, Dropbox or
+          OneDrive. You choose the provider, and you can disconnect at any time.
         </p>
 
         <SubHeading>What is stored and where</SubHeading>
