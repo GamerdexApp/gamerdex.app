@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "October 18, 2026";
+const LAST_UPDATED = "October 30, 2026";
 const ISSUES_URL = "https://github.com/GamerdexApp/gamerdex.app/issues";
 const DISCORD_URL = "https://discord.gg/NBTjUCvqev";
 
@@ -41,7 +41,8 @@ export default function TermsOfService() {
           publishers or developers of the games it covers. Game names,
           characters, images and other game content belong to their owners. They
           are used here only to help players track their own progress. For
-          example, Whiteout Survival is a trademark of Century Games.
+          example, Whiteout Survival is a trademark of Century Games, and Clash
+          of Clans is a trademark of Supercell.
         </p>
       </Section>
 

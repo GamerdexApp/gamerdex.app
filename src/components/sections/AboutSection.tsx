@@ -62,8 +62,9 @@ export default function AboutSection() {
           for players who want to see and do everything. Whether you&apos;re
           cataloging every fish in Dinkum, completing the community center in
           Stardew Valley, stocking every shelf in Supermarket Simulator, or
-          planning your next upgrade in Whiteout Survival, we&apos;ve got a
-          tracker built just for that.
+          planning your next upgrade in Whiteout Survival, or keeping every
+          village in step in Clash of Clans, we&apos;ve got a tracker built just
+          for that.
         </p>
         <p className="mb-10 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
           Each tracker is hand-crafted with accurate, up-to-date game data and

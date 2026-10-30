@@ -369,4 +369,16 @@ export const GAME_CARDS: GameCardProps[] = [
     titleY: 235,
     href: "https://whiteout-survival.gamerdex.app",
   },
+  {
+    id: "c",
+    title: "CLASH OF CLANS",
+    subtitle: "TRACKER",
+    indexTop: "CC",
+    indexBottom: "TRK",
+    headerImage: "/games/clash-of-clans.jpg",
+    iconImage: "/games/clash-of-clans-icon.png",
+    titleSize: 20,
+    titleY: 235,
+    href: "https://coc.gamerdex.app",
+  },
 ];

@@ -18,6 +18,7 @@ GamerDex trackers are free and need no account. Each one keeps your progress in 
 | Stardew Valley        | [stardew-valley.gamerdex.app](https://stardew-valley.gamerdex.app)               | [stardew-valley-companion](https://github.com/GamerdexApp/stardew-valley-companion)   |
 | Supermarket Simulator | [supermarket-simulator.gamerdex.app](https://supermarket-simulator.gamerdex.app) |                                                                                       |
 | Whiteout Survival     | [whiteout-survival.gamerdex.app](https://whiteout-survival.gamerdex.app)         | [whiteout-survival-tracker](https://github.com/GamerdexApp/whiteout-survival-tracker) |
+| Clash of Clans        | [coc.gamerdex.app](https://coc.gamerdex.app)                                     | [clash-of-clans-tracker](https://github.com/GamerdexApp/clash-of-clans-tracker)       |
 
 The homepage cards come from `GAME_CARDS` in `src/components/GameCard.tsx`. Card art lives in `public/games`. When you add a tracker, also add it to `public/llms.txt` and the About section copy.
 

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | GamerDex",
   },
   description:
-    "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator and Whiteout Survival. No account, your data stays in your browser, and cloud sync is optional.",
+    "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator, Whiteout Survival and Clash of Clans. No account, your data stays in your browser, and cloud sync is optional.",
   keywords: [
     "game tracker",
     "game progress",
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "Stardew Valley tracker",
     "Supermarket Simulator tracker",
     "Whiteout Survival tracker",
+    "Clash of Clans tracker",
   ],
   alternates: {
     canonical: "/",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GamerDex: Free Game Progress Trackers",
     description:
-      "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator and Whiteout Survival. No account, your data stays in your browser, and cloud sync is optional.",
+      "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator, Whiteout Survival and Clash of Clans. No account, your data stays in your browser, and cloud sync is optional.",
     url: siteUrl,
     siteName: "GamerDex",
     locale: "en_US",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GamerDex: Free Game Progress Trackers",
     description:
-      "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator and Whiteout Survival. No account, your data stays in your browser, and cloud sync is optional.",
+      "Free progress trackers for Dinkum, Stardew Valley, Supermarket Simulator, Whiteout Survival and Clash of Clans. No account, your data stays in your browser, and cloud sync is optional.",
   },
   icons: {
     icon: [

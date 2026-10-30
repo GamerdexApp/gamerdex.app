@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "October 28, 2026";
+const LAST_UPDATED = "October 30, 2026";
 const ISSUES_URL = "https://github.com/GamerdexApp/gamerdex.app/issues";
 const DISCORD_URL = "https://discord.gg/NBTjUCvqev";
 const GOOGLE_POLICY_URL =
@@ -79,9 +79,10 @@ export default function PrivacyPolicy() {
         <p className={textClass}>
           Some trackers can keep your progress in your own cloud account so that
           your devices stay in step. Today this is available in the Dinkum
-          Tracker, the Stardew Valley Companion, Supermarket Simulator Buddy and
-          the Whiteout Survival Tracker with GitHub, Google Drive, Dropbox or
-          OneDrive. You choose the provider, and you can disconnect at any time.
+          Tracker, the Stardew Valley Companion, Supermarket Simulator Buddy,
+          the Whiteout Survival Tracker and the Clash of Clans Tracker with
+          GitHub, Google Drive, Dropbox or OneDrive. You choose the provider,
+          and you can disconnect at any time.
         </p>
 
         <SubHeading>What is stored and where</SubHeading>

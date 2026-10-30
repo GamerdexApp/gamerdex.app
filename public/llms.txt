@@ -10,6 +10,7 @@ Each tracker covers its game's content: collectibles, buildings, upgrades, miles
 - [Stardew Valley Companion](https://stardew-valley.gamerdex.app): track bundles, collections, villagers and perfection, and import a save file
 - [Supermarket Simulator Buddy](https://supermarket-simulator.gamerdex.app): track store licenses, products and management progress
 - [Whiteout Survival Tracker](https://whiteout-survival.gamerdex.app): track chiefs, buildings, heroes, research and events, and plan upgrade costs and times
+- [Clash of Clans Tracker](https://coc.gamerdex.app): track villages, upgrades and queues, dailies, achievements and the Builder Base and Clan Capital
 
 ## Site
 
